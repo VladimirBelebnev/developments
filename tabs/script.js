@@ -3,6 +3,7 @@ const tabs = document.querySelectorAll('.tabheader__item'),
     tabsContent = document.querySelectorAll('.tabcontent'),
     tabsParent = document.querySelector('.tabheader__items');
 
+// Скрываем контент табов и класс активности
 function hideTabsContent() {
     tabsContent.forEach((item) => {
         item.classList.add('hide');
@@ -14,6 +15,7 @@ function hideTabsContent() {
     });
 }
 
+// Показываем первый таб по умолчанию
 function showTabsContent(i = 0) {
     tabsContent[i].classList.remove('hide');
     tabsContent[i].classList.add('show', 'fade');
@@ -23,6 +25,7 @@ function showTabsContent(i = 0) {
 hideTabsContent();
 showTabsContent();
 
+// Вешаем обработчик события на родителя табов и отслеживаем нажатие на определенный таб.
 tabsParent.addEventListener('click', (event) => {
     const target = event.target;
 
