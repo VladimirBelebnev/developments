@@ -1,4 +1,4 @@
-const accordion = () => {
+const accordeon = () => {
     const accordeon = document.querySelector('.feature-list'),
         accordeonBtn = accordeon.querySelectorAll('.feature__link');
 
@@ -17,4 +17,4 @@ const accordion = () => {
     });
 };
 
-accordion();
+accordeon();
