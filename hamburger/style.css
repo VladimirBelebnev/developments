@@ -1,0 +1,31 @@
+.menu {
+    position: absolute;
+    right: 30px;
+    top: -300px;
+    background-color: white;
+    z-index: 666;
+    padding: 50px 20px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s
+}
+
+.menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.menu-list__item {
+    margin-bottom: 22px
+}
+
+.menu-active {
+    top: 0
+}
+
+.humburger-menu {
+    display: block
+}
