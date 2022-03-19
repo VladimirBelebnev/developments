@@ -5,8 +5,10 @@ const accordion = () => {
     accordeonBtn.forEach(item => {
         item.addEventListener('click', () => {
             accordeonBtn.forEach(btn => {
-                btn.classList.remove('feature__link_active');
-                btn.nextElementSibling.classList.add('hidden');
+                if(item !== btn) {
+                    button.classList.remove('feature__link_active');
+                    button.nextElementSibling.classList.add('hidden');
+                }
             });
 
             item.classList.toggle('feature__link_active');
