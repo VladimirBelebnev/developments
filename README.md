@@ -1,3 +1,3 @@
 # developments-js
 
-My work and templates.
+Here are my achievements and frequently used components.
