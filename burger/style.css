@@ -1,0 +1,61 @@
+/* Burger menu class */
+.burger {
+    display: none;
+    position: relative;
+    border: none;
+    background: none;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s all ease;
+}
+
+.top-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mid-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.burger.active > .top-line {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s all ease;
+}
+
+.burger.active > .mid-line {
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+
+.burger.active > .bottom-line {
+    transform: translateY(-10px) rotate(-45deg);
+    transition: 0.3s all ease;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+}
