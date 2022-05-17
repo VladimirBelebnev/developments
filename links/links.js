@@ -1,5 +1,5 @@
 const links = () => {
-    const links = document.querySelectorAll('.menu__list-item');
+    const links = document.querySelectorAll('.selector');
 
     links.forEach(item => {
         item.addEventListener('click', event => {
